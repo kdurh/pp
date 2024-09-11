@@ -1,9 +1,6 @@
 import requests
 import logging
-import io
-import gzip
-from flask import (Flask, redirect, render_template, request,
-                   send_from_directory, url_for, Response)
+from flask import (Flask, request, Response)
 
 app = Flask(__name__)
 # Configure logging

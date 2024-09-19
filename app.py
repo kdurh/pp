@@ -67,10 +67,6 @@ def proxy():
         )
     except requests.exceptions.RequestException as e:
         return Response(f"Error: {e}", status=500)
-    
-@app.route('/test')
-def test():
-    return "Test"
 
 if __name__ == '__main__':
    app.run(port=8080)
